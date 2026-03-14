@@ -45,28 +45,27 @@ function HomeView({ onNavigate }: { onNavigate: (view: 'home' | 'services' | 'ab
          <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 transform skew-x-12 translate-x-20"></div>
       </div>
 
-      <div className="z-10 flex flex-col items-center w-full max-w-md">
+      <div className="z-10 flex flex-col items-center w-full max-w-2xl px-6">
         {/* Logo */}
-        <div className="mb-20 flex flex-col items-center">
+        <div className="mb-32 mt-20 flex flex-col items-center">
           <img
             src="/logo.png"
             alt="VAVA Design Logo"
-            className="w-64 h-64 md:w-80 md:h-80 mb-4 object-contain"
+            className="w-72 h-72 md:w-96 md:h-96 object-contain drop-shadow-2xl"
           />
-          
         </div>
 
         {/* Buttons */}
-        <div className="w-full space-y-5 flex flex-col items-center">
-          <button 
+        <div className="w-full space-y-6 flex flex-col items-center mb-auto">
+          <button
             onClick={() => onNavigate('services')}
-            className="w-full max-w-xs bg-white text-[#332b3b] font-bold py-4 rounded-full text-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
+            className="w-full max-w-sm bg-white text-[#2D2438] font-bold py-5 rounded-full text-xl shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300"
           >
             Servicios
           </button>
           <button
             onClick={() => onNavigate('about')}
-            className="w-full max-w-xs bg-white text-[#332b3b] font-bold py-4 rounded-full text-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
+            className="w-full max-w-sm bg-white text-[#2D2438] font-bold py-5 rounded-full text-xl shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300"
           >
             Sobre mi
           </button>
@@ -74,15 +73,15 @@ function HomeView({ onNavigate }: { onNavigate: (view: 'home' | 'services' | 'ab
             href="https://api.whatsapp.com/send?phone=54922161525"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full max-w-xs bg-white/20 text-white font-bold py-4 rounded-full text-lg backdrop-blur-md shadow-lg hover:bg-white/30 hover:scale-105 transition-all duration-300 border border-white/30 text-center block"
+            className="w-full max-w-sm bg-white/25 text-white font-bold py-5 rounded-full text-xl backdrop-blur-md shadow-lg hover:bg-white/35 hover:scale-105 transition-all duration-300 border border-white/40 text-center block"
           >
             Charlemos :)
           </a>
         </div>
       </div>
 
-      <div className="absolute bottom-8 text-white/70 text-sm tracking-widest font-medium">
-        custonex.com
+      <div className="absolute bottom-10 text-white/80 text-sm tracking-widest font-light">
+        custonex
       </div>
     </motion.div>
   );
