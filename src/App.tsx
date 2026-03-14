@@ -72,9 +72,14 @@ function HomeView({ onNavigate }: { onNavigate: (view: 'home' | 'services' | 'ab
           >
             Sobre mi
           </button>
-          <button className="w-full max-w-xs bg-white/20 text-white font-bold py-4 rounded-full text-lg backdrop-blur-md shadow-lg hover:bg-white/30 hover:scale-105 transition-all duration-300 border border-white/30">
+          <a
+            href="https://api.whatsapp.com/send?phone=54922161525"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full max-w-xs bg-white/20 text-white font-bold py-4 rounded-full text-lg backdrop-blur-md shadow-lg hover:bg-white/30 hover:scale-105 transition-all duration-300 border border-white/30 text-center block"
+          >
             Charlemos :)
-          </button>
+          </a>
         </div>
       </div>
 
