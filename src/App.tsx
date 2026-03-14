@@ -51,7 +51,7 @@ function HomeView({ onNavigate }: { onNavigate: (view: 'home' | 'services' | 'ab
           <img
             src="/logo.png"
             alt="VAVA Design Logo"
-            className="w-32 h-32 md:w-40 md:h-40 mb-4 object-contain"
+            className="w-64 h-64 md:w-80 md:h-80 mb-4 object-contain"
           />
           <span className="text-white text-xl md:text-2xl font-light tracking-[0.2em]">Design</span>
         </div>
