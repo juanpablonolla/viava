@@ -48,14 +48,12 @@ function HomeView({ onNavigate }: { onNavigate: (view: 'home' | 'services' | 'ab
       <div className="z-10 flex flex-col items-center w-full max-w-md">
         {/* Logo */}
         <div className="mb-20 flex flex-col items-center">
-          <div className="flex items-center text-white font-black text-7xl md:text-8xl tracking-tighter">
-            V
-            <svg className="w-12 h-16 md:w-16 md:h-20 mx-1" viewBox="0 0 40 60" fill="white">
-              <path d="M10 60 L25 25 L15 25 L30 0 L40 0 L25 35 L35 35 Z" />
-            </svg>
-            AVA
-          </div>
-          <span className="text-white text-xl md:text-2xl font-light tracking-[0.2em] mt-2">Design</span>
+          <img
+            src="/logo.png"
+            alt="VAVA Design Logo"
+            className="w-32 h-32 md:w-40 md:h-40 mb-4 object-contain"
+          />
+          <span className="text-white text-xl md:text-2xl font-light tracking-[0.2em]">Design</span>
         </div>
 
         {/* Buttons */}
