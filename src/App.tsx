@@ -82,7 +82,7 @@ function HomeView({ onNavigate }: { onNavigate: (view: 'home' | 'services' | 'ab
       </div>
 
       <div className="absolute bottom-8 text-white/70 text-sm tracking-widest font-medium">
-        custonex
+        custonex.com
       </div>
     </motion.div>
   );
