@@ -45,7 +45,7 @@ function HomeView({ onNavigate }: { onNavigate: (view: 'home' | 'services' | 'ab
         {/* Logo */}
         <div className="mb-8 flex flex-col items-center w-full px-4">
           <img 
-            src="/logo.png" 
+            src="https://viava.com.ar/logo.png" 
             alt="VAVA Design Logo" 
             className="w-full max-w-[380px] h-auto object-contain scale-125"
             referrerPolicy="no-referrer"
@@ -67,7 +67,7 @@ function HomeView({ onNavigate }: { onNavigate: (view: 'home' | 'services' | 'ab
             Nosotros
           </button>
           <a 
-            href="https://api.whatsapp.com/send?phone=54922161525&text=Hola%20Viava!%20quisera%20consultar%20por%20..."
+            href="https://api.whatsapp.com/send?phone=5492216152511&text=Hola%20Viava!%20quisera%20consultar%20por%20..."
             target="_blank"
             rel="noopener noreferrer"
             className="w-[88%] max-w-[320px] bg-white/20 text-white font-bold py-3.5 rounded-full text-[17px] hover:bg-white/30 hover:scale-105 transition-all duration-300 block text-center"
