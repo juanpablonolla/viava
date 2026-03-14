@@ -64,7 +64,7 @@ function HomeView({ onNavigate }: { onNavigate: (view: 'home' | 'services' | 'ab
             onClick={() => onNavigate('about')}
             className="w-[88%] max-w-[320px] bg-white text-[#333333] font-bold py-3.5 rounded-full text-[17px] hover:scale-105 transition-transform duration-300"
           >
-            Sobre mi
+            Nosotros
           </button>
           <a 
             href="https://api.whatsapp.com/send?phone=54922161525&text=Hola%20Viava!%20quisera%20consultar%20por%20..."
@@ -78,7 +78,7 @@ function HomeView({ onNavigate }: { onNavigate: (view: 'home' | 'services' | 'ab
       </div>
 
       <div className="absolute bottom-8 text-white/70 text-sm tracking-widest font-light">
-        custonex.com
+        {new Date().getFullYear()}
       </div>
     </motion.div>
   );
@@ -166,11 +166,19 @@ function AboutView({ onNavigate }: { onNavigate: (view: 'home' | 'services' | 'a
           transition={{ delay: 0.2, duration: 0.5 }}
         >
           <h2 className="text-3xl md:text-5xl font-black text-[#2D2438] mb-8">
-            Sobre mi
+            Nosotros
           </h2>
-          <p className="text-lg md:text-2xl text-gray-600 leading-relaxed font-light">
-            ¡Hola! Soy Diseñadora e Ilustradora con más de 15 años de experiencia. Me apasiona coordinar proyectos de diseño, desde la idea inicial hasta la ejecución final. A lo largo de mi carrera he liderado proyectos para diversas marcas y plataformas, brindando soluciones creativas que generan conexiones auténticas y duraderas.
-          </p>
+          <div className="text-lg md:text-xl text-gray-600 leading-relaxed font-light space-y-6">
+            <p>
+              Somos un estudio de diseño enfocado en crear identidades visuales y experiencias digitales claras, atractivas y funcionales.
+            </p>
+            <p>
+              Con más de 15 años de experiencia desarrollando proyectos de diseño, trabajamos junto a marcas y emprendedores para transformar ideas en soluciones visuales que conecten con las personas.
+            </p>
+            <p>
+              Cada proyecto combina estrategia, creatividad y diseño para construir comunicación auténtica y consistente en diferentes plataformas.
+            </p>
+          </div>
         </motion.div>
       </div>
     </motion.div>
